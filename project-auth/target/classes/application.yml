@@ -1,0 +1,14 @@
+server:
+  port: 3001
+spring:
+  application:
+    name: project-auth
+  cloud:
+    #监控限流
+    sentinel:
+      transport:
+        dashboard: localhost:8080 #看上面提前搭建好了
+    nacos:
+      server-addr: localhost:8848
+      discovery:
+        group: dev

@@ -1,0 +1,15 @@
+server:
+  port: 3002
+spring:
+  application:
+    name: project-data
+  cloud:
+    nacos:
+      config:
+        file-extension: yaml
+        server-addr: 127.0.0.1:8848
+        namespace: d4dc3568-39bc-4258-83bb-a88c56fa9321
+      discovery:
+        server-addr: kubernetes.docker.internal:8848
+        group: dev
+        namespace: d4dc3568-39bc-4258-83bb-a88c56fa9321
